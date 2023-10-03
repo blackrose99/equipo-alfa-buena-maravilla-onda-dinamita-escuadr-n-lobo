@@ -6,6 +6,11 @@ body {
     padding: 0;
 }
 
+/*Estilos del Aside*/
+
+aside{
+    background-color: #f7df09;
+}
 
 /* Estilos para la Galeria de imagenes */
 .gallery {
