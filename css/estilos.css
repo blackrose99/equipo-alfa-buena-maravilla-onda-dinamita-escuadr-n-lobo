@@ -23,12 +23,13 @@ aside{
 
 .parrafo{
     float: right;
-    width: 76%;
+    width: 80%;
+    margin-right: 10px;
 }
 
 
 .image {
-    margin: 10px;
+
     border: 1px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -38,8 +39,8 @@ aside{
 }
 
 .image img {
-    width: 351px;
-    height: 351px;
+    width: 340px;
+    height: 340px;
 }
 
 .image:hover {
