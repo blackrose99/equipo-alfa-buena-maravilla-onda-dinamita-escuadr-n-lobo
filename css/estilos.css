@@ -23,7 +23,7 @@ aside{
 
 .parrafo{
     float: right;
-    width: 76%;
+    width: 80%;
 }
 
 
@@ -38,8 +38,8 @@ aside{
 }
 
 .image img {
-    width: 351px;
-    height: 351px;
+    width: 345px;
+    height: 345px;
 }
 
 .image:hover {
