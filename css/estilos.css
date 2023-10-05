@@ -13,17 +13,17 @@ aside{
 }
 
 /* Estilos para la Galeria de imagenes */
-.gallery {
+.gallery{
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: right;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 1000px;   
 }
 
 .parrafo{
-    justify-content: right;
+    float: right;
+    width: 76%;
 }
 
 
@@ -33,12 +33,13 @@ aside{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s ease;
-    margin-right: 30px;
+    margin-right: 40px;
+
 }
 
 .image img {
-    width: 280px;
-    height: 280px;
+    width: 351px;
+    height: 351px;
 }
 
 .image:hover {
@@ -86,7 +87,7 @@ footer{
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
-    width: 50px;
+    width: 500px;
 }
 
 .menu{
@@ -98,9 +99,12 @@ footer{
 }
 
 .nav input:checked ~ .menu{
-    width: 450px;
+    width: 500px;
+
 }
 
+
+/*500 px para desplegar*/
 
 .menu li{
     list-style: none;
@@ -138,9 +142,11 @@ footer{
  
 }
 
+
+
 .nav input:checked ~ span{
-    background-color: #f974a1;
-    
+    background-color: #83f974;
+
 }
 
 .nav span:nth-child(2) {
