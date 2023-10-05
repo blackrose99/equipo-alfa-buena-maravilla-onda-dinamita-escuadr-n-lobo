@@ -7,7 +7,6 @@ body {
 }
 
 /*Estilos del Aside*/
-/*HOLAAAA*/
 aside{
     background-color: #f7df09;
 }
@@ -25,11 +24,11 @@ aside{
     float: right;
     width: 80%;
     margin-right: 10px;
+    text-align: justify;
 }
 
 
 .image {
-
     border: 1px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -48,11 +47,6 @@ aside{
     z-index: 1;
 }
 
-/*Estilos para el Footer*/
-
-footer{
-    
-}
 
 /*Estilos del Titulo h1*/
 .hit-the-floor {
@@ -166,3 +160,60 @@ footer{
 .nav input:checked ~ span:nth-child(3) {
     transform: translateY(0) rotate(45deg);
 }
+
+.subir-container {
+    float: right;
+    width: 80%;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.subir-container i{
+    color: white; /* Cambia el color del texto del enlace a verde */
+    font-size: 25px; /* Ajusta el tamaño de fuente del enlace según tus preferencias */
+}
+
+/* Agrega un estilo para el botón Subir */
+.btnSubir {
+    display: inline-flex; /* Mostrar en línea y como un elemento flex */
+    align-items: center; /* Alinear contenido verticalmente al centro */
+    background-color: green; /* Cambia el color de fondo a verde */
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 5px 8px; /* Agrega espacio alrededor del texto */
+    border: 1px solid black; /* Agrega un borde negro */
+    border-radius: 5px; /* Añade bordes redondeados */
+    text-decoration: none; /* Quita la subrayado del enlace */
+    position: relative; /* Permite posicionar el contenido relativo al botón */
+}
+
+/* Pseudo-elemento ::before para insertar el icono */
+.btnSubir::before {
+    content: "\f102"; /* Código Unicode del icono (chevrons-up) */
+    font-family: 'boxicons'; /* Define la fuente de iconos (boxicons) */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+    font-size: 18px; /* Ajusta el tamaño del icono según tus preferencias */
+    position: absolute; /* Posiciona el icono dentro del botón */
+    left: 10px; /* Ajusta la posición izquierda del icono */
+    top: 50%; /* Alinea verticalmente el icono al centro del botón */
+    transform: translateY(-50%); /* Ajusta la posición vertical del icono */
+}
+
+/* Estilos adicionales para cuando se pasa el ratón sobre el botón */
+.btnSubir:hover {
+    background-color: darkgreen; /* Cambia el color de fondo al pasar el ratón */
+    color: white; /* Cambia el color del texto a blanco */
+    border: 2px solid black; /* Mantén el borde negro */
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica;  
+    text-transform: uppercase;
+}
+
+h3:hover {
+    color: green; /* Cambia el color del texto a verde al pasar el ratón */
+    text-shadow: 0 0 5px rgba(48, 199, 48, 0.5); /* Agrega una iluminación alrededor de las letras */
+
+  }
