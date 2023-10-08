@@ -86,6 +86,16 @@ a{
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /*Estilos de la barra de navegación*/
 
 .nav, .menu{
@@ -98,12 +108,13 @@ a{
     position: relative;
     margin: auto;
     background-color: #fff;
-    padding: 20px;
+    padding: 25px;
     transition: 0.5s;
     border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
     width: 500px;
+    
 }
 
 .menu{
@@ -116,10 +127,10 @@ a{
 
 .nav input:checked ~ .menu{
     width: 500px;
-
 }
 
-
+  
+  
 /*500 px para desplegar*/
 
 .menu li{
@@ -144,6 +155,9 @@ a{
     height: 40px;
     cursor: pointer;
     opacity: 0;
+    position: absolute;
+    left: 8%;
+    transform: translateX(-50%);
 }
 
 .nav span{
@@ -158,11 +172,12 @@ a{
  
 }
 
-
+.nav input:checked ~ .mensaje{
+    display: none;
+}
 
 .nav input:checked ~ span{
     background-color: #83f974;
-
 }
 
 .nav span:nth-child(2) {
@@ -184,6 +199,39 @@ a{
 .nav input:checked ~ span:nth-child(3) {
     transform: translateY(0) rotate(45deg);
 }
+
+
+.mensaje {
+    text-decoration: none;
+    color: #5dca3c;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+    list-style: none;
+    font-size: 20px;
+    position: absolute;
+  }
+  
+  .nav input:not(:checked) ~ .mensaje {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .subir-container {
     margin-right: 10px;
