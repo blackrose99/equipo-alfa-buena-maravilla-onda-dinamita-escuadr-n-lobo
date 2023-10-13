@@ -13,24 +13,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    var btnEnviar = document.getElementById("btn-form");
-    var btnRegresar = document.getElementById("btn-regresar");
+    const images = document.querySelectorAll('.image img');
 
-    btnEnviar.addEventListener("click", function () {
-        var nombre = document.getElementById("nombre").value.trim();
-        var email = document.getElementById("email").value.trim();
-        var mensaje = document.getElementById("mensaje").value.trim();
+    images.forEach(function(image) {
+        image.addEventListener('click', function() {
+            setInterval(cambiarColores, 2000);
+        });
+    });
 
-        if (nombre === "" || email === "" || mensaje === "") {
-            alert("Por favor, rellene todos los campos.");
-        } else {
-            alert("Datos enviados correctamente");
-            window.location.href = "uts.html";
+    function cambiarColores() {
+      
+        const colorFondo = getRandomColor();
+        const colorTexto = getRandomColor();
+
+     
+        document.body.style.backgroundColor = colorFondo;
+        document.body.style.color = colorTexto;
+    }
+
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
         }
-    });
+        return color;
+    }
 
-    // Agregado: Redirigir al hacer clic en el botón de "Regresar"
-    btnRegresar.addEventListener("click", function () {
-        window.location.href = "uts.html";
-    });
 });
