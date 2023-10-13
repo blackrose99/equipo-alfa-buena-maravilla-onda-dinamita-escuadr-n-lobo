@@ -66,10 +66,10 @@ a{
     height: 370px;
 }
 
-.image:hover {
+/*.image:hover {
     transform: scale(1.1);
     z-index: 1;
-}
+}*/
 
 
 /*Estilos del Titulo h1*/
