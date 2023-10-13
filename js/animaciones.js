@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    //punto 3
     const imagenes = document.querySelectorAll('.image img');
 
     imagenes.forEach(function(image) {
@@ -8,36 +10,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         image.addEventListener('mouseout', function() {
+            image.classList.add("transicion")
             image.style.transform = 'scale(1)';
             image.style.zIndex = '0';
         });
     });
 
-    const images = document.querySelectorAll('.image img');
+    //ounto 1
+    const images1 = document.getElementById("imagen1");
+    const images2 = document.getElementById("imagen2");
+    const images3 =document.getElementById("imagen3");
+    const images4 = document.getElementById("imagen4")
 
-    images.forEach(function(image) {
-        image.addEventListener('click', function() {
-            setInterval(cambiarColores, 2000);
-        });
-    });
+    images1.addEventListener("click", function(){
+        alert("Entrada principal");
+    })
+    
+    images2.addEventListener("click", function(){
+        alert("Nuestro rector");
+    })
 
-    function cambiarColores() {
-      
-        const colorFondo = getRandomColor();
-        const colorTexto = getRandomColor();
+    images3.addEventListener("click", function(){
+        alert("nuetras unidades")
+    })
 
-     
-        document.body.style.backgroundColor = colorFondo;
-        document.body.style.color = colorTexto;
-    }
-
-    function getRandomColor() {
-        const letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
+    images4.addEventListener("click", function(){
+        alert("nuestra bandera")
+    })
 
 });

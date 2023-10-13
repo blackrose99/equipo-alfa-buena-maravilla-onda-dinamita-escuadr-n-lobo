@@ -56,14 +56,17 @@ a{
     border: 1px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    transition: transform 0.3s ease;
     margin-right: 40px;
 
+}
+.transicion{
+    transition: transform 0.3s ease;
 }
 
 .image img {
     width: 370px;
     height: 370px;
+    cursor: pointer;
 }
 
 /*.image:hover {
