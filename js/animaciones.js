@@ -1,6 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+<<<<<<< HEAD
     //punto 3
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function(){
+>>>>>>> 1152a21fcc7d232fc31601dd7bebc005dc27e916
     const imagenes = document.querySelectorAll('.image img');
 
     imagenes.forEach(function(image) {
@@ -16,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+<<<<<<< HEAD
     //ounto 1
     const images1 = document.getElementById("imagen1");
     const images2 = document.getElementById("imagen2");
@@ -39,3 +69,38 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
 });
+=======
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.image img');
+
+    images.forEach(function(image) {
+        image.addEventListener('click', function() {
+            setInterval(cambiarColores, 2000);
+        });
+    });
+
+    function cambiarColores() {
+      
+        const colorFondo = getRandomColor();
+        const colorTexto = getRandomColor();
+
+     
+        document.body.style.backgroundColor = colorFondo;
+        document.body.style.color = colorTexto;
+    }
+
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+});
+>>>>>>> 1152a21fcc7d232fc31601dd7bebc005dc27e916
