@@ -1,0 +1,292 @@
+/*Estilos Generales de toda la pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+}
+
+.central{
+    display: flex;
+    padding: 10px;
+    
+}
+
+/*Estilos del Aside*/
+.aside-long{
+    background-color: #fff494;
+    margin: 0px 10px 0px 0px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 20px;
+    padding: 0px 10px;
+}
+ul li{
+    list-style: none;
+}
+ul .active{
+    background: #f9e109;
+}
+a{
+    text-decoration: none;
+    color: #c20c0c;
+}
+
+/* Estilos para la Galeria de imagenes */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.parrafo{
+    margin-right: 10px;
+    text-align: justify;
+}
+
+
+.image {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-right: 40px;
+
+}
+.transicion{
+    transition: transform 0.3s ease;
+}
+
+.image img {
+    width: 370px;
+    height: 370px;
+    cursor: pointer;
+}
+
+/*.image:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}*/
+
+
+/*Estilos del Titulo h1*/
+.hit-the-floor {
+    color: rgb(48, 199, 48);
+    font-size: 5em;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+    
+.hit-the-floor {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilos de la barra de navegación*/
+
+.nav, .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    position: relative;
+    margin: auto;
+    background-color: #fff;
+    padding: 25px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+    width: 500px;
+    
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ .menu{
+    width: 500px;
+}
+
+  
+  
+/*500 px para desplegar*/
+
+.menu li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu li a:hover{
+    color: rgb(48, 199, 48);
+}
+
+.nav input{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    left: 8%;
+    transform: translateX(-50%);
+}
+
+.nav span{
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #666;
+    pointer-events: none;
+    transition: 0.5s;
+ 
+}
+
+.nav input:checked ~ .mensaje{
+    display: none;
+}
+
+.nav input:checked ~ span{
+    background-color: #83f974;
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+
+
+.nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+
+.nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
+
+.mensaje {
+    text-decoration: none;
+    color: #5dca3c;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+    list-style: none;
+    font-size: 20px;
+    position: absolute;
+  }
+  
+  .nav input:not(:checked) ~ .mensaje {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subir-container {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.subir-container i{
+    color: white; /* Cambia el color del texto del enlace a verde */
+    font-size: 25px; /* Ajusta el tamaño de fuente del enlace según tus preferencias */
+}
+
+/* Agrega un estilo para el botón Subir */
+.btnSubir {
+    display: inline-flex; /* Mostrar en línea y como un elemento flex */
+    align-items: center; /* Alinear contenido verticalmente al centro */
+    background-color: green; /* Cambia el color de fondo a verde */
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 5px 8px; /* Agrega espacio alrededor del texto */
+    border: 1px solid black; /* Agrega un borde negro */
+    border-radius: 5px; /* Añade bordes redondeados */
+    text-decoration: none; /* Quita la subrayado del enlace */
+    position: relative; /* Permite posicionar el contenido relativo al botón */
+}
+
+/* Pseudo-elemento ::before para insertar el icono */
+.btnSubir::before {
+    content: "\f102"; /* Código Unicode del icono (chevrons-up) */
+    font-family: 'boxicons'; /* Define la fuente de iconos (boxicons) */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+    font-size: 18px; /* Ajusta el tamaño del icono según tus preferencias */
+    position: absolute; /* Posiciona el icono dentro del botón */
+    left: 10px; /* Ajusta la posición izquierda del icono */
+    top: 50%; /* Alinea verticalmente el icono al centro del botón */
+    transform: translateY(-50%); /* Ajusta la posición vertical del icono */
+}
+
+/* Estilos adicionales para cuando se pasa el ratón sobre el botón */
+.btnSubir:hover {
+    background-color: darkgreen; /* Cambia el color de fondo al pasar el ratón */
+    color: white; /* Cambia el color del texto a blanco */
+    border: 2px solid black; /* Mantén el borde negro */
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica;  
+    text-transform: uppercase;
+}
+
+h3:hover {
+    color: green; /* Cambia el color del texto a verde al pasar el ratón */
+    text-shadow: 0 0 5px rgba(48, 199, 48, 0.5); /* Agrega una iluminación alrededor de las letras */
+
+  }
