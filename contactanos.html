@@ -22,7 +22,7 @@ form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-input, textarea {
+input, textarea{
   width: 100%;
   padding: 10px;
   margin: 8px 0;
@@ -55,6 +55,37 @@ a{
     color: #fff;
     text-decoration: none;
 }
+
+
+
+
+.container-radio label{
+  display: flex;
+
+  margin-right: 110px;
+ 
+}
+
+.robot{
+  float: left;
+  font-family: Arial, sans-serif;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+
+}
+
+.checkbox input {
+  margin-left: 10px;
+}
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -65,22 +96,40 @@ a{
         <input type="text" placeholder="nombre completo" id="nombre">
         <input type="text" placeholder="email" id="email">
         <textarea placeholder="mensaje" rows="4" id="mensaje"></textarea>
-        <label>Genero:</label>
+
+
+        
+        <label class="robot">Genero:</label><br><br><br>
+      <div class="container-radio">
         <label>
-          <input type="radio" name="genero" value="Femenino">
-          Femenino        
-        <label>
-          <input type="radio" name="genero" value="Masculino">
+          <input type="radio" name="genero" value="Femenino" style="margin-top: -1px;">
+          Femenino
+          <input type="radio" name="genero" value="Masculino" style="margin-top: -1px;">
           Masculino
-        </label>
-        <label>
-          <input type="radio" name="genero" value="Otro">
+          <input type="radio" name="genero" value="Otro" style="margin-top: -0px;">
           Otro
+        </label> 
+      </div><br>
+
+      <div class="checkbox">
+        <label>       
+           
+          <input type="checkbox">
+        
         </label>
+        <label style="margin-left: 10px; margin-top: 19px;">Acepto las condiciones del servicio y la politica de privacidad</label>
+
+      </div><br><br>
+ 
+      
+
         <button type="button" value="Enviar" id="btn-form">Enviar</button>
         <button type="button" value="Regresar" id="btn-form"><a href="uts.html">Regresar</a></button>
 
       </form>
     <script src="js/animaciones formulario.js"></script>
 </body>
+
+
+
 </html>
