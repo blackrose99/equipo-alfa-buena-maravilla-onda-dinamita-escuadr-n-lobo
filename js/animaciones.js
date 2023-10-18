@@ -34,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         alert("nuetras unidades")
     })
 
-    images4.addEventListener("click", function(){
-        alert("nuestra bandera")
-    })
+
 
 });

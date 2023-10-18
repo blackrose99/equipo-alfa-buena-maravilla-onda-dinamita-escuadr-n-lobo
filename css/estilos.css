@@ -64,8 +64,8 @@ a{
 }
 
 .image img {
-    width: 370px;
-    height: 370px;
+    width: 345px;
+    height: 345px;
     cursor: pointer;
 }
 
@@ -115,7 +115,7 @@ a{
     transition: 0.5s;
     border-radius: 50px;
     overflow: hidden;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+ 
     width: 500px;
     
 }
