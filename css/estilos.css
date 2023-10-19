@@ -275,3 +275,24 @@ h3:hover {
 
   }
   
+
+
+
+  .config-btn {
+    cursor: pointer;
+    color: rgb(229, 229, 231);
+    text-decoration: none;
+    float: top;
+    padding: 8px 16px;
+    background-color: rgb(117, 117, 196);
+    border-radius: 4px;
+    width: 100px;
+    
+}
+
+.config-menu {
+    display: none;
+    padding: 10px;
+    background-color: rgb(117, 117, 196);
+    width: 500px;
+}

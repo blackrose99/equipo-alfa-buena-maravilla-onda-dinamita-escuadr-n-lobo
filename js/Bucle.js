@@ -23,3 +23,36 @@ function animateNav() {
 }
 
 animateNav();
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    var configBtn = document.querySelector('.config-btn');
+    var menuTamano = document.getElementById('menuTamanio');
+    var menuLetra = document.getElementById('menuTipoLetra');
+    var titulo = document.getElementById('titulo');
+
+    configBtn.addEventListener('click', function(){
+        if (menuTamano.style.display === 'block') {
+            menuTamano.style.display = 'none';
+            menuLetra.style.display = 'none';
+        } else {
+            menuTamano.style.display = 'block';
+            menuLetra.style.display = 'block';
+        }
+    });
+
+    menuTamano.addEventListener('change', function(){
+        var tamanioSeleccionado = document.querySelector('input[name="tamanio"]:checked').value;
+        document.body.style.fontSize = tamanioSeleccionado;
+    });
+
+    menuLetra.addEventListener('change', function(){
+        var tipoLetraSeleccionado = '';
+        var checkboxes = document.querySelectorAll('input[name="tipoLetra"]:checked');
+        checkboxes.forEach(function(checkbox){
+            tipoLetraSeleccionado += checkbox.value + ',';
+        });
+        document.body.style.fontFamily = tipoLetraSeleccionado.slice(0, -1);
+        titulo.style.fontFamily = tipoLetraSeleccionado.slice(0, -1);
+    });
+})
